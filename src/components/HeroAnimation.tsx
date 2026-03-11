@@ -20,7 +20,7 @@ export default function HeroAnimation() {
         for (let i = 0; i < frameCount; i++) {
             const img = new window.Image();
             const paddedIndex = String(i).padStart(5, "0");
-            img.src = `/heroimage/frame_${paddedIndex}.jpg`;
+            img.src = `/animage/frame_${paddedIndex}.webp`;
             images.push(img);
 
             img.onload = () => {
@@ -139,9 +139,9 @@ export default function HeroAnimation() {
                 {imagesPreloaded && (
                     <div
                         ref={scrollIndicatorRef}
-                        className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none mix-blend-overlay"
+                        className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none mix-blend-overlay px-6"
                     >
-                        <span className="text-[12vw] leading-none tracking-tighter uppercase font-black text-white/40 drop-shadow-2xl text-center whitespace-nowrap">
+                        <span className="text-[15vw] md:text-[12vw] leading-none tracking-tighter uppercase font-black text-white/40 drop-shadow-2xl text-center break-words">
                             Scroll Down
                         </span>
                     </div>

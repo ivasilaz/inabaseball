@@ -31,10 +31,10 @@ export default function HomeSections() {
         <div className="bg-brand-black text-white relative z-10 pt-20">
             {/* Section 1: Headline */}
             <section className="relative pb-24 px-6 container mx-auto text-center border-b border-white/10">
-                <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-4 text-white drop-shadow-2xl">
+                <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter mb-4 text-white drop-shadow-2xl">
                     Indonesia League <span className="text-brand-orange">Baseball</span>
                 </h1>
-                <p className="text-xl md:text-3xl text-gray-400 font-light tracking-widest mb-12 uppercase">
+                <p className="text-lg sm:text-xl md:text-3xl text-gray-400 font-light tracking-widest mb-12 uppercase">
                     Power. Precision. Pride.
                 </p>
                 <Link
@@ -99,8 +99,9 @@ export default function HomeSections() {
                             <h2 className="text-3xl font-bold uppercase tracking-widest text-brand-orange">Standings</h2>
                             <Link href="/standings" className="text-sm tracking-widest uppercase hover:text-brand-orange transition-colors">Full &rarr;</Link>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-                            <table className="w-full text-left border-collapse">
+                        <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden overflow-x-auto">
+                            <div className="min-w-[400px]">
+                                <table className="w-full text-left border-collapse">
                                 <thead>
                                     <tr className="bg-black/50 text-xs tracking-widest text-brand-orange uppercase border-b border-white/10">
                                         <th className="p-4 font-normal">Pos</th>
@@ -120,6 +121,7 @@ export default function HomeSections() {
                                     ))}
                                 </tbody>
                             </table>
+                            </div>
                         </div>
                     </div>
                 </div>
