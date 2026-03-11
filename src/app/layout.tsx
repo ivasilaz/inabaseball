@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Indonesia League Baseball",
     description: "The official website of the Indonesia Baseball League. Power. Precision. Pride.",
-    url: "https://indonesia-baseball.com",
+    url: "https://inabaseball.vercel.app",
     siteName: "Indonesia League Baseball",
     images: [
       {
@@ -51,8 +51,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "SportsOrganization",
     "name": "Indonesia League Baseball",
-    "url": "https://indonesia-baseball.com",
-    "logo": "https://indonesia-baseball.com/icon.png",
+    "url": "https://inabaseball.vercel.app",
+    "logo": "https://inabaseball.vercel.app/icon.png",
     "description": "The premier professional baseball league in Indonesia.",
     "foundingDate": "2024",
     "address": {

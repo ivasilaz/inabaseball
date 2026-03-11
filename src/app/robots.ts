@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://indonesia-baseball.com/sitemap.xml',
+    sitemap: 'https://inabaseball.vercel.app/sitemap.xml',
   };
 }

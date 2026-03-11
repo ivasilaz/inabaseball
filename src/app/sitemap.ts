@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://indonesia-baseball.com';
+  const baseUrl = 'https://inabaseball.vercel.app';
 
   return [
     {
